@@ -1,0 +1,12 @@
+
+First HAve a Look On the PCAP file by
+
+tshark -r Wpa-Psk.pcap
+
+Show the SSID of Client and Station
+
+airodum-ng -r Wpa-Psk.pcap
+
+Key for the Network from the PACAP 
+
+aircrack-ng -w "wordlist(rockyou.txt) --bbsid "BSSID" "Filename(Wpa-Psk.pcap)""
